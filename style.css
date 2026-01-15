@@ -1,51 +1,93 @@
-                body {
-            font-family: Arial;
-            background: #be9138f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBuRsoiDlFKCPOLT8NqLFACnDJsUKyOlKvmA&s);
-        }
-        .calculator {
-            background: rgb(7, 210, 228);
-            padding: 120px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgb(12, 230, 4);
-        }
-        .calculator:hover{
-            background-color: rgb(220, 238, 20);
-        }
-        input {
-            width: 100%;
-            height: 80px;
-            font-size: 20px;
-            margin-bottom: 20px;
-            text-align: right;
-        }
-        input:hover{
-            transform: scale(1.1);
-            background-color: rgb(248, 243, 242);
-            color: black;
-            transform:skew(20deg);
-            transition: 2s;
+* {
+    box-sizing: border-box;
+}
 
-        }
-        
-        button {
-            width: 100px;
-            height: 90px;
-            font-size: 20px;
-            margin: 5px;
-            cursor: pointer;
-            border: 2px solid transparent;
-        }
-        
-        button:hover{
-            border: 5px solid rgb(31, 14, 221);
-            background-color: rgba(108, 239, 32, 0.867)g;
-        }
-       
+body {
+    font-family: Arial;
+    background: #be9138f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.calculator {
+    background: rgb(7, 210, 228);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(12, 230, 4);
+    width: 90%;
+    max-width: 350px;
+}
+
+.calculator:hover {
+    background-color: rgb(220, 238, 20);
+}
+
+
+input {
+    width: 100%;
+    height: 60px;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+input:hover {
+    background-color: rgb(248, 243, 242);
+    color: black;
+    transition: 0.4s;
+}
+
+
+.calculator div {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+
+button {
+    flex: 1;
+    height: 55px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+
+
+button:hover {
+    border: 3px solid rgb(31, 14, 221);
+    background-color: rgba(108, 239, 32, 0.867);
+    transition: 0.3s;
+}
+
+
+@media (max-width: 480px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    button {
+        height: 48px;
+        font-size: 1.1rem;
+    }
+
+    input {
+        height: 50px;
+        font-size: 1.1rem;
+    }
+}
+
         
 
 
